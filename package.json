@@ -1,0 +1,42 @@
+{
+  "name": "@adobe/aem-boilerplate",
+  "private": true,
+  "version": "1.3.0",
+  "description": "Starter project for Adobe Helix",
+  "scripts": {
+    "lint:js": "eslint .",
+    "lint:css": "stylelint \"blocks/**/*.css\" \"styles/*.css\"",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:fix": "npm run lint:js -- --fix && npm run lint:css -- --fix",
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "start": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 aem up"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adobe/aem-boilerplate.git"
+  },
+  "author": "Adobe",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/adobe/aem-boilerplate/issues"
+  },
+  "homepage": "https://github.com/adobe/aem-boilerplate#readme",
+  "devDependencies": {
+    "@adobe/aem-cli": "^16.16.25",
+    "@babel/eslint-parser": "7.28.6",
+    "cross-env": "^10.1.0",
+    "eslint": "8.57.1",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.32.0",
+    "stylelint": "17.4.0",
+    "stylelint-config-standard": "40.0.0",
+    "vite": "^7.3.1"
+  },
+  "main": ".eslintrc.js",
+  "keywords": [],
+  "dependencies": {
+    "htm": "^3.1.1",
+    "preact": "^10.29.0"
+  }
+}
