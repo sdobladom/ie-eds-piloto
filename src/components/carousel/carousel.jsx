@@ -32,7 +32,7 @@ export default function decorate(block) {
             return {
                 img: row.querySelector('[data-aue-prop="image"]')?.src ?? '',
                 title: row.querySelector('[data-aue-prop="title"]').textContent.trim(),
-                paragraph: [(row.querySelectorAll('[data-richtext-prop=paragraph]') ?? [])].map(p => p.textContent.trim()),
+                paragraph: [(row.querySelectorAll('[data-richtext-prop="paragraph"]') ?? [])].map(p => p.textContent.trim()),
                 button
             }
         })
